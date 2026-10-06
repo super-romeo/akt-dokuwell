@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Цена — возражения на акт камеральной проверки</title>
+<meta name="description" content="Цена подготовки возражений на акт камеральной проверки: один акт или пакет для бухгалтера на аутсорсе.">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
+<script src="smoke.js" defer></script>
+<script>
+  /* Показ экрана цен — price_view через штатную точку события smoke.js (window.smokeTrack).
+     smoke.js подключён с defer и выполняется до DOMContentLoaded. */
+  document.addEventListener("DOMContentLoaded", function () { if (window.smokeTrack) window.smokeTrack("price_view"); });
+</script>
+</head>
+<body data-page="price">
+
+<header><div class="wrap">
+  <div class="logo"><a href="index.html" data-ev="click_logo_home">ВозражениеАкт</a></div>
+  <nav class="top">
+    <a href="index.html#what" data-ev="click_nav_what">Что получите</a>
+    <a href="index.html#example" data-ev="click_nav_example">Пример</a>
+    <a href="price.html" data-ev="click_nav_price">Цена</a>
+  </nav>
+</div></header>
+
+<div class="wrap">
+
+  <div class="hero">
+    <h1>Цена</h1>
+    <p class="sub">Возражения по каждому эпизоду акта: сумма, довод, статья НК РФ и опись приложений — готово к подаче через личный кабинет ФНС.</p>
+  </div>
+
+  <section id="price">
+    <div class="grid">
+      <div class="card"><b>Один акт</b><span>2 490 ₽ за акт.</span><br><a class="btn" href="pay.html?plan=akt" data-ev="payment_click click_pay_akt">Оплатить 2 490 ₽</a></div>
+      <div class="card"><b>Бухгалтеру на аутсорсе</b><span>4 990 ₽ в месяц, до 10 актов клиентов.</span><br><a class="btn" href="pay.html?plan=buhgalter" data-ev="payment_click click_pay_buhgalter">Оплатить 4 990 ₽ в месяц</a></div>
+    </div>
+    <p class="cta-note">Сервис в подготовке &middot; Оплата на сайте не подключена, деньги не списываются</p>
+    <div class="actions"><a class="btn" href="index.html" data-ev="click_back">Вернуться к описанию</a></div>
+  </section>
+</div>
+
+<footer><div class="wrap">
+  <p>Оператор: ИП Гудев Роман, ИНН 615007167949 &middot; <a href="privacy.html" data-ev="click_legal_privacy">Политика обработки персональных данных</a></p>
+  <p class="muted">Мы не являемся налоговым органом и не представляем его. Подготовка возражений — справочно-аналитическая услуга; решение о подаче и ответственность за сведения остаются за налогоплательщиком.</p>
+</div></footer>
+
+<div id="consent" hidden>Сайт использует cookie Яндекс Метрики, чтобы считать, какими кнопками пользуются. <button data-consent="yes">Согласен</button><button data-consent="no">Отказаться</button></div>
+</body>
+</html>
